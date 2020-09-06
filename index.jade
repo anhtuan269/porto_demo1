@@ -1,0 +1,751 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Demo1.1
+  link(rel='stylesheet' href='./style.css' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CPoppins:300,400,500,600,700' rel='stylesheet' media='all')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./owlcarousel/assets/owl.carousel.min.css')
+  link(rel='stylesheet' href='./owlcarousel/assets/owl.theme.default.min.css')
+  link(rel='stylesheet' href='https://portotheme.com/html/porto_ecommerce/demo_1/assets/vendor/fontawesome-free/css/all.min.css' type='text/css')
+  script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+  script(src='./owlcarousel/owl.carousel.min.js')
+  script(src='https://kit.fontawesome.com/b1ff58fb64.js' crossorigin='anonymous')
+// header
+.header
+  span
+    h5
+      | Get 10% extra OFF on Porto Summer Sale - Use 
+      b PORTOSUMMER
+      |  coupon - 
+      a(href='#') Shop Now
+  button(type='button' title='Close(Esc)')
+    a(href='#') x
+// End header
+// slider nav icon
+.container
+  .slide
+    .slide-show.owl-carousel.owl-theme
+      .slide1
+        img(src='./image/slide1.jpg' alt='')
+        .slide-content
+          span
+            h5 Winter Fashion Trends
+          span
+            h3 GET UP TO 30% OFF
+          span
+            h2 on Jackets
+          span
+            p
+              | STARTTING AT 
+              span
+                sup $
+                | 199
+                sup 99
+          a(href='#')  SHOP NOW
+      .slide2.slide1
+        img(src='./image/slide2.jpg' alt='')
+        .slide-content
+          span
+            h5 New Season Hats
+          span
+            h3
+              span.rotate UP TO
+              span.off 20% OFF
+          span
+            h2 _
+          span
+            p
+              | STARTTING AT 
+              sup $
+              | 199
+              sup 99
+          a(href='#')
+            | SHOP NOW 
+            i.fas.fa-long-arrow-alt-right
+  .logo
+    a(href='#')
+      img(src='./image/logo.png' alt='logo')
+  .nav
+    ul
+      li
+        a(href='#') HOME
+      li.has-submenu
+        a(href='#')
+          | CATEGORIES 
+          i.fas.fa-chevron-down
+        .arrow-up
+        ul.submenu
+          table
+            tr
+              th VARIATION 1
+              th VARIATION 2
+              img(src='./image/menu-banner.jpg' alt='')
+            tr
+              td
+                a(href='#') FULLWIDTH BANNER
+              td
+                a(href='#') LIST TYPE
+            tr
+              td
+                a(href='#')  BOXED SLIDER BANER
+              td
+                a(href='#') AJAX INFINITE SCROLL
+            tr
+              td
+                a(href='#') BOXED IMAGE BANNER
+              td
+                a(href='#') 3 COLUMNS PRODUCTS
+            tr
+              td
+                a(href='') LEFT SIDEBAR
+              td
+                a(href='#')  4 COLUMNS PRODUCTS
+            tr
+              td
+                a(href='') RIGHT SIDEBAR
+              td
+                a(href='') 5 COLUMNS PRODUCTS
+            tr
+              td
+                a(href='') PRODUCT FLEX GRID
+              td
+                a(href='')  6 COLUMNS PRODUCTS
+            tr
+              td
+                a(href='') HORIZONTAL FILTER1
+              td
+                a(href='') 7 COLUMNS PRODUCTS
+            tr
+              td
+                a(href='') HORIZONTAL FILTER2
+              td
+                a(href='')  8 COLUMNS PRODUCTS
+      li.has-submenu
+        a(href='#')
+          | PRODUCTS 
+          i.fas.fa-chevron-down
+        .arrow-up
+        ul.submenu.submenu2
+          table
+            tr
+              th VARIATION 1
+              th VARIATION 2
+              th PRODUCT LAYOUT TYPES
+              img(src='./image/menu-bg.png' alt='')
+            tr
+              td
+                a(href='#') HOZIZONTAL THUMBS
+              td
+                a(href='#') STICK TABS
+              td
+                a(href='#') DEFAULT LAYOUT
+            tr
+              td
+                a(href='#')  VERTICAL THUMBNAILS
+              td
+                a(href='#') LIST TYPE
+              td
+                a(href='#') EXTENDED LAYOUT
+            tr
+              td
+                a(href='#') INNER OOM
+              td
+                a(href='#') WITH LEFT SIDEBAR
+              td
+                a(href='#') FULL WIDTH LAYOUT
+            tr
+              td
+                a(href='') ADDTOCART STICKY
+              td
+                a(href='#')  
+              td
+                a(href='#') GRID IMAGES LAYOUT
+            tr
+              td
+                a(href='') ACCORDION TABS
+              td
+                a(href='')
+              td
+                a(href='#') STICKY BOTH SIDE INFO
+            tr
+              td
+                a(href='')
+              td
+                a(href='')  
+              td
+                a(href='#') STICKY RIGHT SIDE INFO
+      li.has-submenu1
+        a(href='#')
+          | PAGES 
+          i.fas.fa-chevron-down
+        .arrow-up
+        ul.submenu12
+          li
+            a(href='#') SHOPPING CART
+          li.has-submenu12
+            a(href='#')
+              | CHECKOUT 
+              i.fas.fa-angle-right
+            ul.submenu21
+              li
+                a(href='#') CKECKOUT SHIPPNG
+              li
+                a(href='#') CKECKOUT SHIPPNG 2
+              li
+                a(href='#') CKECKOUT REVIEW
+          li.has-submenu12
+            a(href='#')
+              | DASHBOARD 
+              i.fas.fa-angle-right
+            ul.submenu21
+              li
+                a(href='#') DASHBOARD
+              li
+                a(href='#') MY ACCOUNT
+          li
+            a(href='#') ABOUT US
+          li.has-submenu12
+            a(href='#')
+              | BLOG 
+              i.fas.fa-angle-right
+            ul.submenu21
+              li
+                a(href='#') BLOG
+              li
+                a(href='#') BLOG POST
+          li
+            a(href='#') CONTACTS US
+          li
+            a(href='#') LOGIN
+          li
+            a(href='#') FORGOT PASSWORD
+      li
+        a(href='#') BUY PORTO!
+  .icon
+    a(href='#')
+      i.far.fa-user
+    a(href='#')
+      i.far.fa-heart
+    a(href='#')
+      i.fas.fa-search
+    a.icon-info(href='#')
+      i.fas.fa-shopping-bag
+      span 2
+      i.fas.fa-chevron-down
+      .arrow-up
+      .cart-info
+        .info
+          .title
+            h3 2-ITEMS
+            h4 VIEW CART
+          .woman-ring
+            .ring-content
+              h4 Woman Ring
+              p 1 x $99.00
+              h6(title='Remove Product') x
+            .ring-img
+              img(src='./image/product-cart1.jpg' alt='')
+          .woman-necklace
+            .necklace-content
+              h4 Woman Necklace
+              p 1 x $35.00
+              h5(title='Remove Product') x
+            .necklace-img
+              img(src='./image/product-cart2.jpg' alt='')
+          .checkout
+            p.total TOTAL
+            p.money $134.00
+            //- a.cash(href='#') CHECKOUT
+// End slider nav icon
+// Shop
+.shop
+  span
+    h5 SHOP BY CATEGORY
+  .product.owl-carousel.owl-theme
+    .product-1.info
+      img(src='./image/product-4.jpg' alt='')
+      span
+        h4 SUNGLASSES
+      span
+        p 0 PRODUCT
+    .product-2.info
+      img(src='./image/product-5.jpg' alt='')
+      span
+        h4 BAGS
+      span
+        p 0 PRODUCT
+    .product-3.info
+      img(src='./image/product-6.jpg' alt='')
+      span
+        h4 ELECTRONIC
+      span
+        p 0 PRODUCT
+    .product-4.info
+      img(src='./image/product-2.jpg' alt='')
+      span
+        h4 FASHION
+      span
+        p 0 PRODUCT
+    .product-5.info
+      img(src='./image/product-1.jpg' alt='')
+      span
+        h4 HEADPHONE
+      span
+        p 0 PRODUCT
+    .product-6.info
+      img(src='./image/product-3.jpg' alt='')
+      span
+        h4 SHOES
+      span
+        p 0 PRODUCT
+    .product-7.info
+      img(src='./image/product-4.jpg' alt='')
+      span
+        h4 SUNGLASSES
+      span
+        p 0 PRODUCT
+.shop-contact
+  .contact
+    img(src='./image/home-banner1.jpg' alt='')
+    .glass-contact
+      span
+        h4 Sunglasses Sale
+      span
+        p  See all and find yours
+      a(href='#')  SHOP BY GLASSES
+  .contact
+    img(src='./image/home-banner2.jpg' alt='')
+    .trends-contact
+      span
+        h4 Sunglasses Sale
+      span
+        p  See all and find yours
+      a(href='#')  SHOP BY GLASSES
+  .contact
+    img(src='./image/home-banner3.jpg' alt='')
+    .fashion-contact
+      span
+        h4 Sunglasses Sale
+      span
+        p  See all and find yours
+      a(href='#')  SHOP BY GLASSES
+  .contact
+    img(src='./image/home-banner4.jpg' alt='')
+    .bags-contact
+      span
+        h4 Sunglasses Sale
+      span
+        p  See all and find yours
+      a(href='#')  SHOP BY GLASSES
+// End shop
+// show product
+.show
+  span
+    h4 FEATURED CATEGORY
+  .show-product
+    .products
+      img(src='./image/product-1.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.discount -30%
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-2.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.hot HOT
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-3.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.discount -20%
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-4.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-5.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-6.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.hot HOT
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-7.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-8.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-9.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.hot HOT
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-10.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.discount -40%
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-11.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.discount -10%
+      span.hot.add HOT
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+    .products
+      img(src='./image/product-12.jpg' alt='')
+      span
+        p
+          a(href='') CATEGORY
+      span
+        h6
+          a(href='#') Product Short Name
+      a.star(href='#' title='5.00')
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      span
+        h5
+          span.line-through $59.00
+          span.nomarl $49.00
+      span.cart
+        i.fas.fa-shopping-bag
+      a.view(href='#' title='Quick View') QUICK VIEW
+// end show product
+// support
+.support
+  .help
+    i.fas.fa-headphones-alt.fa-3x
+    span
+    span
+      h3 CUSTOMER SUPPORT
+    span
+      h4 Need Assistence?
+    span
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit obcaecati maiores, sed asperiores possimus placeat ut provident laborum. Dolor perspiciatis recusandae nulla labore. Quod porro quos aliquid voluptatibus sapiente!
+  .help
+    i.far.fa-credit-card.fa-3x
+    span
+      h3 SECURED PAYMENT
+    span
+      h4 Sale &amp; Fast
+    span
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit obcaecati maiores, sed asperiores possimus placeat ut provident laborum. Dolor perspiciatis recusandae nulla labore. Quod porro quos aliquid voluptatibus sapiente!
+  .help
+    i.fas.fa-reply.fa-3x
+    span
+      h3 FREE RETURNS
+    span
+      h4 Easy &amp; Free
+    span
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit obcaecati maiores, sed asperiores possimus placeat ut provident laborum. Dolor perspiciatis recusandae nulla labore. Quod porro quos aliquid voluptatibus sapiente!
+  .help
+    i.fas.fa-shipping-fast.fa-3x
+    span
+      h3 FREE SHIPPING
+    span
+      h4 Orders Over $99
+    span
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit obcaecati maiores, sed asperiores possimus placeat ut provident laborum. Dolor perspiciatis recusandae nulla labore. Quod porro quos aliquid voluptatibus sapiente!
+// End support
+// subscribe
+.subscribe
+  .content
+    span
+      h3 SUBSCRIBE NEWSLETTER
+    span
+      p Get all the latest information on Events, Sales and offers
+  .input
+    input(type='text' placeholder='Email address...')
+    a(href='#')  SUBSCRIBE
+// End subscribe
+// contact
+.contact
+  .info
+    span
+      h4 CONTACT INFO
+    table
+      tr
+        th ADDRESS
+        th EMAIL
+      tr
+        td 1234 Street name, City, Englend
+        td mail@example.com
+      tr
+        th PHONE
+        th WORKING DAYS/HOURS
+      tr
+        td Toll Free (123) 456-7890
+        td Mon-Sun /9:00 AM - 8:00 PM
+  .account
+    span
+      h4 MY ACCOUNT
+    table
+      tr
+        td  About Us
+        td Orders History
+      tr
+        td  Contact Us
+        td Advanced Search
+      tr
+        td  My Account
+  .feature
+    span
+      h4 MAIN FEATURES
+    table
+      tr
+        td  Super Fast WordPress Theme
+        td Powerful Admin Panel
+      tr
+        td  1st Fully working Ajax Theme
+        td Mobie &amp; Retina Optimized
+      tr
+        td  33 Unique Shop Layouts
+// End contact
+// footer
+.footer
+  span
+    p Porto eCommerce. &copy; 2020. All Rights Reserved
+  .card
+    i.fab.fa-cc-visa.fa-3x
+    i.fab.fa-cc-paypal.fa-3x
+    i.fab.fa-cc-stripe.fa-3x
+    i.fab.fa-cc-amazon-pay.fa-3x
+// End footer
+// javascrip
+script.
+  $(document).ready(function() {
+  $('.slide-show').owlCarousel({
+  nav: true,
+  loop: true,
+  responsive: {
+  1000: {
+  items: 1
+  },
+  600: {
+  items: 1
+  },
+  0: {
+  items: 1
+  }
+  }
+  })
+  });
+script.
+  $(document).ready(function() {
+  $('.product').owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: true,
+  responsive: {
+  900: {
+  items: 6
+  },
+  600: {
+  items: 4
+  },
+  0: {
+  items: 2
+  }
+  }
+  })
+  });
+// end javscrip
