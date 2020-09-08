@@ -1271,7 +1271,9 @@
             width: 22%;
         }
         
-        .col-3 {}
+        .col-3 {
+            overflow: hidden;
+        }
         
         .col-4 {
             display: grid;
@@ -1289,11 +1291,17 @@
             flex-wrap: wrap;
         }
         
-        .col-7 {}
+        .col-7 {
+            overflow: hidden;
+        }
         
-        .col-8 {}
+        .col-8 {
+            overflow: hidden;
+        }
         
-        .col-9 {}
+        .col-9 {
+            overflow: hidden;
+        }
         
         .col-10 {
             width: 14%;
