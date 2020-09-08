@@ -616,6 +616,18 @@
             display: block;
         }
         
+        .screen-moble {
+            width: 100vw;
+            height: 100vh;
+            z-index: 999;
+            position: fixed;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            transition: 1s;
+            transform: all 0.5s;
+        }
+        
         .container .nav-slide {
             position: fixed;
             top: 0;
