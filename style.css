@@ -619,13 +619,13 @@
         .screen-moble {
             width: 100vw;
             height: 100vh;
-            z-index: 999;
             position: fixed;
             top: 0;
             background-color: rgba(0, 0, 0, 0.5);
             display: none;
             transition: 1s;
             transform: all 0.5s;
+            z-index: 9999;
         }
         
         .container .nav-slide {
@@ -636,7 +636,7 @@
             background-color: #000;
             width: 0;
             overflow-x: hidden;
-            transition: 0.4s;
+            transition: all 0.4s ease;
         }
         
         .container .nav-slide .nav-sidebar {
@@ -1192,7 +1192,7 @@
             display: flex;
             border-top: 1px solid #999;
             padding: 30px 0;
-            margin: 20px 50px;
+            margin: 20px 70px;
             border-bottom: 1px solid #999;
             flex-wrap: wrap;
         }
@@ -1264,6 +1264,36 @@
             float: right;
         }
         
+        #scroll-btn {
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            right: 10px;
+            z-index: 999;
+            opacity: 0;
+            transition: all .3s, margin-right 0s;
+            transform: translateY(40px);
+        }
+        
+        #scroll-btn i {
+            text-decoration: none;
+            height: 40px;
+            width: 40px;
+            background-color: #3a4045;
+            color: #FFF;
+            display: block;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.8em;
+        }
+        
+        #scroll-btn.fixed {
+            transform: translateY(0);
+            opacity: 1 !important;
+            visibility: visible;
+        }
+        
         .selected {
             content: "";
             display: none;
@@ -1308,7 +1338,7 @@
         }
         
         .col-8 {
-            overflow: hidden;
+            /* overflow: hidden; */
         }
         
         .col-9 {

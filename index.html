@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/b1ff58fb64.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="C1">
     <!-- header-->
     <div class="header header-notice">
         <div class="close">
@@ -191,7 +191,7 @@
                 <li><a href="#">BUY PORTO!</a></li>
             </ul>
         </div>
-        <div class="screen-moble">
+        <div class="screen-moble" id="moble">
             <div class="nav-slide" id="left-sidebar">
                 <ul class="nav-sidebar">
                     <li id="close"> <a href="#" title="close/esc" class="close-btn" style="cursor: pointer;" onclick="closeNav()"> &times; </a></li>
@@ -698,6 +698,9 @@
 
         </div>
     </div>
+    <div id="scroll-btn" onclick="back()">
+        <i class="fas fa-angle-up" style="cursor:pointer;"></i>
+    </div>
     <!--End footer-->
 
 
@@ -778,28 +781,71 @@
             $(".sub32").toggleClass("rotate")
         })
         $(".sub33").click(function(event) {
-            $(".sub331").toggleClass("show");
-            $(".sub33").toggleClass("rotate")
-        })
-        $(".col-9").click(function(event) {
-            $(".screen-moble").toggleClass("show")
-        })
+                $(".sub331").toggleClass("show");
+                $(".sub33").toggleClass("rotate")
+            })
+            // $(".col-9").click(function(event) {
+            //     $(".screen-moble").toggleClass("show")
+            // })
         $(".close-btn").click(function(event) {
-            $(".screen-moble").removeClass("show")
-        })
+                $(".screen-moble").removeClass("show")
+            })
+            // $(document).on('click', function(divclose) {
+            //     if ($(divclose.target).closest("#left-sidebar").length == 0) {
+            //         // $("#moble").hide();
+            //         debugger;
+            //     }
+            // })
     </script>
     <script>
         function openNav() {
             document.getElementById("left-sidebar").style.width = "250px";
+            $('#moble').addClass('show');
+            $('#moble').on('click', function(e) {
+                var target = e.target;
+
+                if (target.id == 'moble') {
+                    closeNav();
+                }
+            });
         }
 
         function closeNav() {
             document.getElementById("left-sidebar").style.width = "0";
+            $('#moble').removeClass('show');
         }
 
-        // function openMoble() {
-        //     document.getElementById("test").style.display = "block";
+        // function onScroll() {
+        //     const scrollHeight = $(window).scrollTop();
+
+        //     const el = $('#scroll-btn');
+
+        //     if (scrollHeight >= 400) {
+        //         el.addClass('fixed');
+        //     } else {
+        //         el.removeClass('fixed');
+        //     }
         // }
+
+        // window.onscroll = onScroll;
+
+        function scroll() {
+            if ($(window).scrollTop() >= 400) {
+                $('#scroll-btn').addClass('fixed');
+            } else {
+                $('#scroll-btn').removeClass('fixed');
+            }
+        }
+        window.onscroll = scroll;
+
+        function back() {
+            $('#scroll-btn').on('click', function(e) {
+                $('html, body').animate({
+                    'scrollTop': 0
+                }, 1200);
+                e.preventDefault();
+            });
+        }
     </script>
     <!--end javscrip-->
 </body>
