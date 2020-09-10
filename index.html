@@ -17,6 +17,32 @@
 </head>
 
 <body id="C1">
+    <!--loadding............................................................-->
+    <div class="loadding-background" id="load-bkg" onclick="endBg() "></div>
+    <div class="loadding-fixed">
+        <div class="loadding-container" id="load-border">
+            <div class="loadding" id="closest">
+                <div class="img-bg" id="load-content">
+                    <img src="./image/logo-black.png" alt="">
+                    <h2>BE THE FIRST TO KNOW</h2>
+                    <p class="p1"> Lorem ipsum dolor iusto nostrum qui similique labore consequatur a, quisquam nobis, culpa numquam asperiores aut!</p>
+                    <button class="close-load">X</button>
+                    <input type="text" placeholder=" Email Address........" class="email">
+                    <input type="submit" class="btn" value="Go!">
+                    <div class="check-box">
+                        <label>
+                            <input type="checkbox" value="1">
+                            Don't show this popup again
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End loadding............................................................-->
+
     <!-- header-->
     <div class="header header-notice">
         <div class="close">
@@ -806,13 +832,27 @@
                 if (target.id == 'moble') {
                     closeNav();
                 }
-            });
+            })
         }
 
         function closeNav() {
             document.getElementById("left-sidebar").style.width = "0";
             $('#moble').removeClass('show');
         }
+        setTimeout(function() {
+            var el = document.querySelector('#load-bkg');
+            el.style.display = 'block';
+            document.getElementById("load-content").style.display = 'block';
+        }, 3000)
+
+        $('body').on('click', function(e) {
+            var target = e.target;
+            if (target.id == 'load-border') {
+                $('#load-bkg').addClass("selected");
+                $('#load-content').addClass("selected");
+                $('.loadding-fixed').addClass("selected")
+            }
+        })
 
         // function onScroll() {
         //     const scrollHeight = $(window).scrollTop();
